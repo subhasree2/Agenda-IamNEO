@@ -7,7 +7,7 @@ $(function () {
   let cols_ = document.querySelectorAll(".note");
   let dragSrcEl_ = null;
 
-  handleDragStart = function (e) {
+  function handleDragStart(e) {
     e.dataTransfer.effectAllowed = "move";
     e.dataTransfer.setData("text/html", this.innerHTML);
 
@@ -20,7 +20,7 @@ $(function () {
     this.style.cursor = "all-scroll";
   };
 
-  handleDragOver = function (e) {
+  function handleDragOver(e) {
     if (e.preventDefault) {
       e.preventDefault(); // Allows us to drop.
     }
@@ -29,17 +29,17 @@ $(function () {
     return false;
   };
 
-  handleDragEnter = function (e) {
+  function handleDragEnter(e) {
     $(this).addClass("over");
   };
 
-  handleDragLeave = function (e) {
+  function handleDragLeave(e) {
     // this/e.target is previous target element.
 
     $(this).removeClass("over");
   };
 
-  handleDrop = function (e) {
+  function handleDrop(e) {
     // this/e.target is current target element.
     console.log(e.dataTransfer);
 
@@ -56,7 +56,7 @@ $(function () {
     return false;
   };
 
-  handleDragEnd = function (e) {
+  function handleDragEnd(e) {
     // this/e.target is the source node.
     this.style.opacity = "1";
 
@@ -69,12 +69,12 @@ $(function () {
 
   [].forEach.call(cols_, function (col) {
     col.setAttribute("draggable", "true"); // Enable columns to be draggable.
-    col.addEventListener("dragstart", this.handleDragStart, false);
-    col.addEventListener("dragenter", this.handleDragEnter, false);
-    col.addEventListener("dragover", this.handleDragOver, false);
-    col.addEventListener("dragleave", this.handleDragLeave, false);
-    col.addEventListener("drop", this.handleDrop, false);
-    col.addEventListener("dragend", this.handleDragEnd, false);
+    col.addEventListener("dragstart", handleDragStart, false);
+    col.addEventListener("dragenter", handleDragEnter, false);
+    col.addEventListener("dragover", handleDragOver, false);
+    col.addEventListener("dragleave", handleDragLeave, false);
+    col.addEventListener("drop", handleDrop, false);
+    col.addEventListener("dragend", handleDragEnd, false);
   });
 });
 
