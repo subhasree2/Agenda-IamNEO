@@ -265,8 +265,4 @@ class App {
   }
 }
 
-try {
-  new App();
-} catch (e) {
-  /* ... */
-}
+var object = new App();
