@@ -78,44 +78,6 @@ $(function () {
   });
 });
 
-function OpenTab(){
-  let removeElement = document.querySelector(".Note");
-  removeElement.remove();
-  let Add = document.querySelector("#Notes");
-  Add.innerHTML += `<div class="Note2">
-  <textarea wrap='off' id="Take1" name="Take1" rows="5" cols="50" placeholder="Take a note..."></textarea><br>
-  <div class="icons1">
-      <em class="bi bi-card-heading"></em>
-      <em class="bi bi-bookmarks"></em>
-      <em class="bi bi-card-checklist"></em>
-      <em class="bi bi-image"></em>
-      <em class="bi bi-bell"></em>
-      <em class="bi bi-arrow-left-circle"></em>
-      <button class="times" onclick="CloseTab()">Close</button>
-  </div>
-</div>`;
-const textarea = document.querySelector("textarea");
-textarea.addEventListener("keyup",e=>{
-  textarea.style.height = "30px";
-  let scHeight = e.target.scrollHeight;
-  textarea.style.height = `${scHeight}px`;
-});
-}
-function CloseTab(){
-  let removeElement = document.querySelector(".Note2");
-  removeElement.remove();
-  let Add = document.querySelector("#Notes");
-  Add.innerHTML += `<div class="Note">
-  <input id="Take" name="Take" rows="4" cols="50" placeholder="Take a note..." onclick="OpenTab()">
-  <div class="icons">
-      <em class="bi bi-check-square"></em>
-      <em class="bi bi-image"></em>
-  </div>
-</div>`;
-}
-//new
-
-
 class App {
   constructor() {
       // JSON.parse turns string into array
@@ -152,34 +114,6 @@ class App {
           //delete a note with trash icon
           this.deleteNote(event);
       });
-
-      
-      //EventListener to add tooltip when mouseover
-      document.body.addEventListener('mouseover', event => {
-          this.openTooltip(event);
-      });
-      //close the tooltip when mouseout
-      document.body.addEventListener('mouseout', event => {
-          this.closeTooltip(event);
-      });
-
-      // to make the tooltip stay up or close
-      this.$colorTooltip.addEventListener('mouseover', function () {
-          this.style.display = 'flex';
-      });
-
-      this.$colorTooltip.addEventListener('mouseout', function () {
-          this.style.display = 'none';
-      });
-
-      this.$colorTooltip.addEventListener('click', event => {
-          const color = event.target.dataset.color;
-          if (color) {
-              this.editNoteColor(color);
-          }
-      });
-
-
 
       //EventListener to clear the form when submitted
       this.$form.addEventListener("submit", event => {
@@ -258,27 +192,6 @@ class App {
       this.$modal.classList.toggle('open-modal');
   }
 
-  openTooltip(event) {
-      //make sure only open when it is hovered over
-      if (!event.target.matches('.toolbar-color')) return;
-      this.id = event.target.dataset.id;
-      //get specific coordinates of tooltip
-      const noteCoords = event.target.getBoundingClientRect();
-      //to determine where the user is on the page
-      const horizontal = noteCoords.left + window.scrollX;
-      const vertical = noteCoords.top + window.scrollY;
-      this.$colorTooltip.style.transform = `translate(${horizontal}px, ${vertical}px)`;
-      this.$colorTooltip.style.display = 'flex';
-  }
-
-  
-  closeTooltip(event) {
-      if (!event.target.matches('.toolbar-color')) return;
-      this.$colorTooltip.style.display = 'none';
-  }
-
-
-
   addNote({ title, text }) {
       //add note data
       const newNote = {
@@ -301,13 +214,6 @@ class App {
       this.notes = this.notes.map(note =>
           //need to convert id from string to number
           note.id === Number(this.id) ? { ...note, title, text } : note
-      );
-      this.render();
-  }
-
-  editNoteColor(color) {
-      this.notes = this.notes.map(note =>
-          note.id === Number(this.id) ? { ...note, color } : note
       );
       this.render();
   }
@@ -351,7 +257,6 @@ class App {
     <div class="note-text">${note.text}</div>
     <div class="toolbar-container">
       <div class="toolbar">
-        <i class="toolbar-color bi bi-palette" data-id=${note.id}></i>
         <em class="toolbar-delete fas fa-trash-alt" data-id=${note.id}></em>
       </div>
     </div>
