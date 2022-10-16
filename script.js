@@ -266,4 +266,4 @@ class App {
   }
 }
 
-var object = new App();
+let object = new App();
