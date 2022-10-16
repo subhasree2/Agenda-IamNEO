@@ -142,7 +142,6 @@ class App {
       })
   }
 
-
   handleFormClick(event) {
       const isFormClicked = this.$form.contains(event.target);
       //check to see if user has clicked into the form
