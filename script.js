@@ -203,6 +203,7 @@ class App {
       this.notes = [...this.notes, newNote];
       // display Notes on the screen
       this.render();
+      window.location.reload();
       // closes form after entering a note
       this.closeForm();
   }
