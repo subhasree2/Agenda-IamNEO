@@ -16,7 +16,6 @@
     color: black;
     position: fixed;
     background-color: #fff;
-    width: calc(100% - 0%);
     height: 70px;
     display: flex;
     overflow: hidden;
@@ -161,7 +160,6 @@
     width: 30%;
     height: auto;
     margin-right: 30px;
-    padding-right: 10px;
     border-radius: 10px;
     padding: 20px;
     line-height: 25px;
@@ -197,7 +195,6 @@
     margin-left: 250px;
     display: flex;
     height: auto;
-    align-items: center;
     padding: 10px;
     border-radius: 7px;
   }
@@ -237,7 +234,6 @@
       margin-left: 120px;
       display: flex;
       height: 48px;
-      align-items: center;
       padding-left: 20px;
       background-color: rgb(240, 240, 240);
       border-radius: 7px;
@@ -279,14 +275,7 @@
     align-items: center;
     flex-direction: column;
   }
-  
-  #placeholder-logo {
-    height: 120px;
-    margin: 20px;
-    opacity: 0.1;
-    width: 120px;
-  }
-  
+    
   #placeholder-text {
     color: #80868b;
     cursor: default;
@@ -353,20 +342,14 @@
     overflow: hidden;
     position: relative;
     font-size: 1.375rem;
-    font-weight: 400;
-    line-height: 1.75rem;
     padding-bottom: 12px;
     padding-top: 16px;
   }
   
   .modal-text {
     width: calc(100% - 10px);
-    min-height: 43px;
     margin: 0 5px;
-    padding: 10px 10px;
-    font-size: 1rem;
     font-weight: 500;
-    line-height: 1.5rem;
     letter-spacing: 0.00625em;
     border: 0;
     overflow: hidden;
@@ -394,14 +377,7 @@
   input:focus {
     outline: none;
   }
-  
-  #placeholder {
-    margin-top: 20vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  
+    
   #form-buttons {
     display: none;
     text-align: right;
@@ -442,13 +418,12 @@
   }
   
   .note-title {
-    padding-top: 12px;
     letter-spacing: 0.00625em;
     font-size: 1rem;
     font-weight: 500;
     line-height: 1.5rem;
     min-height: 38px;
-    padding: 16px 16px 0 16px;
+    padding: 12px 16px 0 16px;
     transition: background-color 0.218s ease-in;
     box-sizing: border-box;
     font-variant-ligatures: none;
@@ -487,7 +462,6 @@
   
   .toolbar-delete {
     height: 20px;
-    margin: 0 8px;
     width: 20px;
     margin: 5px;
     cursor: pointer;
