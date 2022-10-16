@@ -4,8 +4,8 @@ $(document).ready(function () {
   });
 });
 $(function () {
-  var cols_ = document.querySelectorAll(".note");
-  var dragSrcEl_ = null;
+  let cols_ = document.querySelectorAll(".note");
+  let dragSrcEl_ = null;
 
   handleDragStart = function (e) {
     e.dataTransfer.effectAllowed = "move";
