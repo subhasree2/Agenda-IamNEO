@@ -265,4 +265,8 @@ class App {
   }
 }
 
-new App();
+try {
+  new App();
+} catch (e) {
+  /* ... */
+}
