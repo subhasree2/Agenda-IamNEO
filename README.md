@@ -4,7 +4,7 @@
 Contributors:
 * Front End - [Subhasree M](https://github.com/subhasree2)
 * Back End - [Sophia Mary R](https://github.com/SOPHIA-MARY-R)
-           - [Vaishnavi A Wagh](https://github.com/vaishnaviw2011)
+*            [Vaishnavi A Wagh](https://github.com/vaishnaviw2011)
 
 
 Our work:
