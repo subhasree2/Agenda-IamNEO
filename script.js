@@ -202,8 +202,12 @@ function search_card() {
       }
     }
 }
-function Stack() {
+
+/* TO CHANGE VIEW (STACK or GRID) */
+function Stack(x) {
+  x.toggleClass("bi-grid-3x3-gap");
   if(FlagCtr==0){
+    
     FlagCtr = 1;
     let element = document.querySelectorAll(".note");
     for (const box of element) {
