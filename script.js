@@ -270,4 +270,8 @@ let object = new App();
 
 function Reload(){
   window.location.reload();
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> adb70653c32722af1faa61ff97d1b2ded817d3c7
