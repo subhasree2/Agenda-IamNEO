@@ -109,7 +109,7 @@ class Keep {
       const newNote = {
           title,
           text,
-          color: "#d3d3d3",
+          color: "white",
           id: this.notes.length > 0 ? this.notes[this.notes.length - 1].id + 1 : 1
       };
       this.notes = [...this.notes, newNote];
@@ -193,13 +193,13 @@ function search_card() {
     search=search.toLowerCase();
     let notes = document.getElementsByClassName('note');
       
-    for (let index = 0; index < notes.length; index++) { 
-        if (!notes[index].innerHTML.toLowerCase().includes(search)) {
-            notes[index].style.display="none";
-        }
-        else {
-            notes[index].style.display="list-item";                 
-        }
+    for(let note of notes){
+      if (!note.innerHTML.toLowerCase().includes(search)) {
+          note.style.display="none";
+      }
+      else {
+          note.style.display="list-item";                 
+      }
     }
 }
 function Stack() {
