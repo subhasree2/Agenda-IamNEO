@@ -7,7 +7,7 @@ $(document).ready(function () {
 
 /* DRAG & DROP */
 const dragArea = document.querySelector("#notes");
-new Sortable(dragArea, {
+let drag = new Sortable(dragArea, {
   animation: 350
 });
 
