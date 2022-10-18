@@ -7,7 +7,7 @@
 
 
 ### Our work:
-* Netlify Website : [Netlify](https://iamneo-agenda.netlify.app/)
+* Netlify : [Netlify](https://iamneo-agenda.netlify.app/)
 * Sonar Cloud : [Sonar Cloud](https://sonarcloud.io/project/overview?id=subhasree2_Agenda-IamNEO)
 
 ### Features:
