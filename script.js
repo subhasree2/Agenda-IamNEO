@@ -125,7 +125,7 @@ addNote({
  const newNote= {
   title,
   text,
-  color: "#d3d3d3",
+//  color: "#d3d3d3",
    id: this.notes.length > 0 ? this.notes[this.notes.length - 1].id + 1: 1
  }
 
