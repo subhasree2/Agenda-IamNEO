@@ -9,7 +9,7 @@ $(document).ready(function () {
 /* DRAG & DROP */
 const dragArea=document.querySelector("#notes");
 
-new Sortable(dragArea, {
+let drag = new Sortable(dragArea, {
  animation: 350
 });
 
@@ -220,7 +220,6 @@ function search_card() {
 
 /* TO CHANGE VIEW (STACK or GRID) */
 function Stack(x) {
-  x.toggleClass("bi-grid-3x3-gap");
   if(FlagCtr==0){
     
     FlagCtr = 1;
