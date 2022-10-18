@@ -407,7 +407,7 @@ input:focus {
   justify-content: space-between;
   margin: 16px;
   width: 250px;
-  background-color: #fff;
+/*  background-color: #fff;*/
   border-color: #e0e0e0;
   border: 1px solid #d3d3d3;
   box-sizing: border-box;
