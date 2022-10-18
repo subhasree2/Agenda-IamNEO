@@ -1,3 +1,4 @@
+let FlagCtr = 0;
 $(document).ready(function () {
   $(".sidebar-btn").click(function () {
     $(".sidebar").toggleClass("collapse");
@@ -113,7 +114,7 @@ class Keep {
       };
       this.notes = [...this.notes, newNote];
       this.render();
-      //window.location.reload();
+    
       this.closeForm();
   }
 
@@ -125,7 +126,7 @@ class Keep {
       );
       
       this.render();
-      //window.location.reload();
+    
   }
   selectNote(event) {
       const $selectedNote = event.target.closest('.note');
@@ -143,7 +144,7 @@ class Keep {
       this.notes = this.notes.filter(note => note.id !== Number(id));
       
       this.render();
-      //window.location.reload();
+    
   }
 
   render() {
@@ -200,4 +201,24 @@ function search_card() {
             notes[i].style.display="list-item";                 
         }
     }
+}
+function Stack() {
+  if(FlagCtr==0){
+    FlagCtr = 1;
+    let element = document.querySelectorAll(".note");
+    for (const box of element) {
+      box.style.width = '80%';
+      box.style.textAlign = 'center';
+      box.style.height = 'auto';
+    }
+  }
+  else {
+    FlagCtr = 0;
+    let element = document.querySelectorAll(".note");
+    for (const box of element) {
+      box.style.width = '250px';
+      box.style.textAlign = 'left';
+      box.style.height = 'auto';
+    }
+  }
 }
