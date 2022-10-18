@@ -193,12 +193,12 @@ function search_card() {
     search=search.toLowerCase();
     let notes = document.getElementsByClassName('note');
       
-    for (i = 0; i < notes.length; i++) { 
-        if (!notes[i].innerHTML.toLowerCase().includes(search)) {
-            notes[i].style.display="none";
+    for (let index = 0; index < notes.length; index++) { 
+        if (!notes[index].innerHTML.toLowerCase().includes(search)) {
+            notes[index].style.display="none";
         }
         else {
-            notes[i].style.display="list-item";                 
+            notes[index].style.display="list-item";                 
         }
     }
 }
