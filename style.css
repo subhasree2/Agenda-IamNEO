@@ -11,6 +11,11 @@ body{
   background: #fff;
 }
 
+.dark-mode{
+  background-color: black;
+  color: white;
+}
+
 .wrapper .header{
   border-bottom: 1px solid black;
   color: black;
