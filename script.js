@@ -176,3 +176,11 @@ class Keep {
 }
 
 let object = new Keep();
+
+function Reload(){
+  window.location.reload();
+}
+function darkMode() {
+  let element = document.body;
+  element.classList.toggle("dark-mode");
+}
