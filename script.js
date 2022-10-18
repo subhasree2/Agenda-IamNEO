@@ -216,6 +216,7 @@ class App {
           note.id === Number(this.id) ? { ...note, title, text } : note
       );
       this.render();
+      window.location.reload();
   }
 
   // populate the modal with title and text from selected note
