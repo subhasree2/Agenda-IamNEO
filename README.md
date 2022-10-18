@@ -7,6 +7,6 @@ Contributors:
 
 
 Our work:
-[Google Keep Clone](https://subhasree2.github.io/Agenda-IamNEO/)
-
-Netlify Website: [Netlify](https://iamneo-agenda.netlify.app/)
+* [Google Keep Clone](https://subhasree2.github.io/Agenda-IamNEO/)
+* Netlify Website: [Netlify](https://iamneo-agenda.netlify.app/)
+* Sonar Cloud : [Sonar Cloud](https://sonarcloud.io/project/overview?id=subhasree2_Agenda-IamNEO)
