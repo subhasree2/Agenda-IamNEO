@@ -1,3 +1,4 @@
+let FlagCtr = 0;
 $(document).ready(function () {
   $(".sidebar-btn").click(function () {
     $(".sidebar").toggleClass("collapse");
@@ -188,6 +189,7 @@ class App {
 
   closeModal(event) {
       this.editNote();
+      window.location.reload();
       this.$modal.classList.toggle('open-modal');
   }
 
@@ -216,7 +218,6 @@ class App {
           note.id === Number(this.id) ? { ...note, title, text } : note
       );
       this.render();
-      window.location.reload();
   }
 
   // populate the modal with title and text from selected note
@@ -275,4 +276,25 @@ function Reload(){
 function darkMode() {
   let element = document.body;
   element.classList.toggle("dark-mode");
+}
+
+function Stack() {
+  if(FlagCtr==0){
+    FlagCtr = 1;
+    let element = document.querySelectorAll(".note");
+    for (const box of element) {
+      box.style.width = '80%';
+      box.style.textAlign = 'center';
+      box.style.height = 'auto';
+    }
+  }
+  else {
+    FlagCtr = 0;
+    let element = document.querySelectorAll(".note");
+    for (const box of element) {
+      box.style.width = '250px';
+      box.style.textAlign = 'left';
+      box.style.height = 'auto';
+    }
+  }
 }
