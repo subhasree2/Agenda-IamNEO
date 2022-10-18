@@ -114,7 +114,7 @@ class Keep {
       };
       this.notes = [...this.notes, newNote];
       this.render();
-      //window.location.reload();
+    
       this.closeForm();
   }
 
@@ -126,7 +126,7 @@ class Keep {
       );
       
       this.render();
-      //window.location.reload();
+    
   }
   selectNote(event) {
       const $selectedNote = event.target.closest('.note');
@@ -144,7 +144,7 @@ class Keep {
       this.notes = this.notes.filter(note => note.id !== Number(id));
       
       this.render();
-      //window.location.reload();
+    
   }
 
   render() {
