@@ -184,3 +184,20 @@ function darkMode() {
   let element = document.body;
   element.classList.toggle("dark-mode");
 }
+
+
+/* SEARCH IMPLEMENTATION */
+function search_card() {
+    let search = document.getElementById('find').value
+    search=search.toLowerCase();
+    let notes = document.getElementsByClassName('note');
+      
+    for (i = 0; i < notes.length; i++) { 
+        if (!notes[i].innerHTML.toLowerCase().includes(search)) {
+            notes[i].style.display="none";
+        }
+        else {
+            notes[i].style.display="list-item";                 
+        }
+    }
+}
