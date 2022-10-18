@@ -267,3 +267,7 @@ class App {
 }
 
 let object = new App();
+
+function Reload(){
+  window.location.reload();
+}
