@@ -1,5 +1,5 @@
 # Agenda-IamNEO
-## Use case 2 - Front End
+## Use case II - Front End
 
 ### Contributors:
 * Front End - [Subhasree M](https://github.com/subhasree2) , [Vaishnavi Wagh](https://github.com/vaishnaviw2011)
