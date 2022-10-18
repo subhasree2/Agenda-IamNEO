@@ -9,4 +9,4 @@ Contributors:
 Our work:
 [Google Keep Clone](https://subhasree2.github.io/Agenda-IamNEO/)
 
-Netlify Website: [https://634c1b4bf936210e1975ba60--adorable-arithmetic-8234ed.netlify.app/](https://iamneo-agenda.netlify.app/)
+Netlify Website: [Netlify](https://iamneo-agenda.netlify.app/)
