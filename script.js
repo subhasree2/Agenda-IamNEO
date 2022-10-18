@@ -270,8 +270,9 @@ let object = new App();
 
 function Reload(){
   window.location.reload();
-<<<<<<< HEAD
 }
-=======
+
+function darkMode() {
+  let element = document.body;
+  element.classList.toggle("dark-mode");
 }
->>>>>>> adb70653c32722af1faa61ff97d1b2ded817d3c7
