@@ -12,7 +12,7 @@
 
 ### Features:
 * CRUD operations for cards on local storage
-* Drag and drop feature
+* Prioritising Notes using Drag and drop feature
 * Search operation
 * Stack and Grid view
 * Light mode and dark mode
