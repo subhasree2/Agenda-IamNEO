@@ -271,3 +271,7 @@ let object = new App();
 function Reload(){
   window.location.reload();
 }
+function darkMode() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
