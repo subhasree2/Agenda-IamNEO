@@ -28,7 +28,7 @@
                     </svg></a>
                     Keep</div>
                 <form>
-                    <div class="Note1">
+                    <div class="Search">
                         <em class="bi bi-search"></em>
                         <input id="w3review1" name="w3review1" rows="4" cols="50" placeholder="Search">
                     </div>
@@ -77,12 +77,12 @@
         <!--sidebar end-->
         <!--container start-->
         <div class="container" style="z-index: 0">
-            <!-- Modal to pop up to edit notes -->
-            <div class="modal">
-                <div class="modal-content">
-                    <input class="modal-title" placeholder="Title" type="text">
-                    <input class="modal-text" placeholder="Take a note..." type="text">
-                    <span class="modal-close-button">Close</span>
+            <!-- popup to edit notes -->
+            <div class="popup">
+                <div class="popup-content">
+                    <input class="popup-title" placeholder="Title" type="text">
+                    <input class="popup-text" placeholder="Take a note ..." type="text">
+                    <span class="popup-close-button">Close</span>
                 </div>
             </div>
 
@@ -99,12 +99,12 @@
                     </form>
                 </div>
 
-                <!-- written notes will be visible here -->
+                <!-- written notes will be shown here -->
                 <div id="notes"></div>
 
-                <!-- placeholder -->
-                <div id="placeholder">
-                    <p id="placeholder-text">Notes you add appear here</p>
+                <!-- visible when no notes are present -->
+                <div id="empty">
+                    <p id="empty-text">Added notes will be shown here</p>
                 </div>
             </main>
         </div>
@@ -120,4 +120,5 @@
     integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous">
 </script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.min.js" integrity="sha512-Eezs+g9Lq4TCCq0wae01s9PuNWzHYoCMkE97e2qdkYthpI0pzC3UGB03lgEHn2XM85hDOUF6qgqqszs+iXU4UA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="script.js"></script>

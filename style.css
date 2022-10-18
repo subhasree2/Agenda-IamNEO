@@ -1,3 +1,4 @@
+/* STYLE FOR BODY */
 *{
   margin: 0;
   padding: 0;
@@ -58,6 +59,7 @@ body{
   display: flex;
 }
 
+/* STYLE FOR SIDE NAVIGATION BAR */
 .wrapper .sidebar{
   position: fixed;
   color: black;
@@ -142,6 +144,7 @@ body{
   cursor: pointer;
 }
 
+/* STYLE FOR CONTAINER*/
 .wrapper .container{
   top: 100%;
   width: 80%;
@@ -202,7 +205,7 @@ textarea::-webkit-scrollbar{
   width: 0px;
 }
 
-.Note,.Note2{
+.Note{
   width: 50%;
   box-shadow: 3px 3px 5px 1px rgb(199, 196, 196);
   align-items: center;
@@ -212,12 +215,6 @@ textarea::-webkit-scrollbar{
   justify-content: center;
   padding: 10px;
   border-radius: 7px;
-}
-
-.Note2{
-  height: auto;
-  display: block;
-  padding: 10px;
 }
 
 div .icons{
@@ -249,7 +246,7 @@ div .icons i{
   margin-right: 20px;
 }
 
-.Note1{
+.Search{
     width: 200%;
     align-items: center;
     margin-top: 40px;
@@ -262,12 +259,12 @@ div .icons i{
     border-radius: 7px;
 }
 
-.Note1 input{
+.Search input{
   border: none;
   background-color: rgb(240, 240, 240)
 }
 
-.Note1 i{
+.Search i{
   margin-right: 10px;
 }
 
@@ -279,14 +276,14 @@ em{
   margin-right: 20px;
 }
   
-#placeholder {
+#empty {
   margin-top: 10vh !important;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
   
-#placeholder-text {
+#empty-text {
   color: #80868b;
   cursor: default;
   font-size: 1.375rem;
@@ -340,7 +337,7 @@ em{
   position: relative;
 }
 
-.modal-title {
+.popup-title {
   width: calc(100% - 10px);
   min-height: 43px;
   margin: 0 5px;
@@ -355,7 +352,7 @@ em{
   padding-top: 16px;
 }
 
-.modal-text {
+.popup-text {
   width: calc(100% - 10px);
   margin: 0 5px;
   font-weight: 500;
@@ -476,7 +473,7 @@ input:focus {
   opacity: 1;
 }
 
-.modal {
+.popup {
   position: fixed;
   left: 0;
   z-index: 200;
@@ -486,12 +483,12 @@ input:focus {
   background-color: rgba(229, 229, 229, 0.5);
   opacity: 0;
   visibility: hidden;
-  /* keeps modal closed unless clicked on */
+  /* keeps popup closed unless clicked on */
   transform: scale(1.1);
   transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
 }
 
-.modal-content {
+.popup-content {
   box-shadow: 0 1px 3px 0 rgba(60, 64, 67, 0.302),
       0 4px 8px 3px rgba(60, 64, 67, 0.149);
   position: absolute;
@@ -504,7 +501,7 @@ input:focus {
   border-radius: 0.5rem;
 }
 
-.modal-close-button {
+.popup-close-button {
   float: right;
   margin: 0.2em 0;
   box-sizing: border-box;
@@ -524,11 +521,11 @@ input:focus {
   cursor: pointer;
 }
 
-.modal-close-button:hover {
+.popup-close-button:hover {
   background-color: rgba(95, 99, 104, 0.039);
 }
 
-.open-modal {
+.open-popup {
   opacity: 1;
   visibility: visible;
   transform: scale(1);
