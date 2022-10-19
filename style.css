@@ -206,7 +206,7 @@ textarea::-webkit-scrollbar{
   width: 0px;
 }
 
-.Note{
+/* .Note{
   width: 50%;
   box-shadow: 3px 3px 5px 1px rgb(199, 196, 196);
   align-items: center;
@@ -216,7 +216,7 @@ textarea::-webkit-scrollbar{
   justify-content: center;
   padding: 10px;
   border-radius: 7px;
-}
+} */
 
 div .icons{
   display: flex;
@@ -292,6 +292,7 @@ em{
   line-height: 1.75rem;
 }
 
+/*CREATE FORM*/
 #form-container {
   border-radius: 8px;
   border: 0.5px solid #d3d3d3;
@@ -318,6 +319,7 @@ em{
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
 }
 
+/* CARDS CONTAINER */
 #notes {
   display: flex;
   flex-wrap: wrap;
@@ -338,6 +340,7 @@ em{
   position: relative;
 }
 
+/* EDIT FORM */
 .popup-title {
   width: calc(100% - 10px);
   min-height: 43px;
@@ -401,6 +404,7 @@ input:focus {
   border-radius: 10px;
 }
 
+/* INDIVIDUAL CARDS */
 .note {
   display: flex;
   flex-direction: column;
@@ -451,6 +455,7 @@ input:focus {
   word-wrap: break-word;
 }
 
+/* TOOLBAR IN EDIT FORM */
 .toolbar {
   opacity: 0;
   color: black;
@@ -474,6 +479,7 @@ input:focus {
   opacity: 1;
 }
 
+/* EDIT BOX */
 .popup {
   position: fixed;
   left: 0;
